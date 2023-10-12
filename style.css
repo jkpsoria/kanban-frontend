@@ -1,0 +1,202 @@
+/* * {
+     border: 1px dashed black;
+}
+ */
+ .hide {
+    display: none;
+}
+body {
+   /* background-color: rgb(239, 236, 187);
+    */
+    margin: 0 1%;
+    background-image: linear-gradient(to right, rgb(249, 225, 225),rgb(219, 200, 237), rgb(237, 226, 190), rgb(219, 229, 209));
+}
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1%;
+}
+.task-board {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+   /* gap: 15%;
+    */
+    min-width: 90%;
+    min-height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.task-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 100%;
+    padding-bottom: 3%;
+}
+.box {
+   /* padding: 5%;
+    */
+    width: 20vw;
+    min-height: 70vh;
+   /* border: 1px solid black;
+    */
+    border-radius: 5px;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+}
+.box-titles {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8%;
+}
+.add-task {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+textarea {
+    resize: none;
+    margin: 0 0 5% 0;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+}
+select {
+    border: 2px solid #ccc;
+    height: 30%;
+    background-color: #f8f8f8;
+}
+.card {
+    border-radius: 5px;
+    margin: 5%;
+    padding: 5%;
+    overflow-wrap: break-word;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card p {
+    text-wrap: wrap !important;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.backlog {
+    max-height: 10vh;
+    overflow: auto;
+    background-color: #f7a4a47b;
+}
+.todo {
+    max-height: 10vh;
+    overflow: auto;
+    background-color: #c0adfd85;
+}
+.inprogress {
+    max-height: 10vh;
+    overflow: auto;
+    background-color: #f6d18684;
+}
+.done {
+    max-height: 10vh;
+    overflow: auto;
+    background-color: #cbe2b088;
+}
+.drag-over {
+   /* border: dashed 3px red;
+    */
+    filter: drop-shadow(0 0 10px grey);
+}
+.task-board h3 {
+    padding: 0.5%;
+    border-radius: 5px;
+}
+h3 {
+    text-align: center;
+}
+h3#backlog {
+    background-color: #F7A4A4;
+}
+h3#todo {
+    background-color: #c0adfd;
+}
+h3#inprogress {
+    background-color: #F6D186;
+}
+h3#done {
+    background-color: #CBE2B0;
+}
+/* The Modal (background) */
+.modal {
+    display: none;
+   /* Hidden by default */
+    position: fixed;
+   /* Stay in place */
+    z-index: 1;
+   /* Sit on top */
+    padding-top: 100px;
+   /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+   /* Full width */
+    height: 100%;
+   /* Full height */
+    overflow: auto;
+   /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+   /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+   /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+    display: flex;
+    background-color: #fafaf3;
+    justify-content: center;
+    margin: auto;
+    padding: 5%;
+    border-radius: 5px;
+    width: 30%;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right !important;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#newTodo {
+    padding: 0.8%;
+    border-radius: 5px;
+    border-color: none;
+    border: none;
+    background-color: #92c0f1;
+    width: 5%;
+}
+#newTodo:hover {
+    cursor: pointer;
+    background-color: #92c0f1b2;
+}
+#addTaskBtn {
+    padding: 1%;
+    border-radius: 5px;
+    border-color: none;
+    border: none;
+    background-color: #92c0f1;
+    width: 100%;
+    height: 30%;
+}
+#addTaskBtn:hover {
+    cursor: pointer;
+    background-color: #92c0f1b2;
+}
+h1 {
+    text-align: center;
+    background-color: #F8EAD8;
+}

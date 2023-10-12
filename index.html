@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Kanban Board</h1>
+    </header>
+    <main>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="newTodo"><strong>&plus;</strong></button>
+        <br>
+        <br>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <form id="formTask">
+                    <div class="add-task">
+                        <label for="taskName"><strong>Description</strong></label>
+                        <!-- <input type="t" name="taskName" id="taskName" required> -->
+                        <textarea name="taskName" id="taskName" cols="20" rows="5" ></textarea>
+                        <select name="taskStatus" id="taskStatus">
+                            <option value="backlog"><strong>Status</strong></option>
+                            <option value="todo">To Do</option>
+                            <option value="inprogress">In Progress</option>
+                            <option value="done">Done</option>
+                        </select>
+                        <br>
+                        <button type="submit" id="addTaskBtn"><strong>Add</strong></button>
+    
+                    </div>
+                </form>
+
+                
+            </div>
+
+        </div>
+
+        <section id="container">
+
+
+
+
+
+            <div class="task-board">
+                <div class="box-titles">
+                    <h3 id="backlog">Backlog</h3>
+                    <h3 id="todo">To Do</h3>
+                    <h3 id="inprogress">In Progress</h3>
+                    <h3 id="done">Done</h3>
+                </div>
+
+                <div class="task-box">
+                    <div class="box backlog">
+
+                    </div>
+                    <div class="box todo">
+
+                    </div>
+                    <div class="box inprogress">
+
+                    </div>
+                    <div class="box done">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
